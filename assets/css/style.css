@@ -36,11 +36,15 @@
 }
 
 #running-score {
-    float:left;
+ 
     background-color: azure;
     color: navy;
 }
 
 .user-data {
     background-color: teal;
+}
+
+.crystals {
+    width: 80%;
 }
