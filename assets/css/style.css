@@ -1,0 +1,46 @@
+#game-body {
+    width: 50%;
+
+}
+#game-title {
+    color: white;
+    background-color: orangered;
+    width: 75%;
+    font-size: 15px;
+}
+
+#game-instructions {
+    background-color: tan;
+    height: 300px;
+
+
+}
+
+#listofinstructions {
+    padding: 10px;
+
+}
+
+.instructions {
+    color: seagreen;
+    font-size: 10px;
+}
+
+#third-row {
+    width: 75%;
+}
+
+#random-number {
+    background-color: seagreen;
+    color: navy;
+}
+
+#running-score {
+    float:left;
+    background-color: azure;
+    color: navy;
+}
+
+.user-data {
+    background-color: teal;
+}
