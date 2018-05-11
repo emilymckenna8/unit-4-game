@@ -2,7 +2,7 @@
 //begin initial function
 $(document).ready(function(){
 //sets initial variables    
-var wins = 0;
+var numWins = 0;
 var losses= 0;
 var firstCrystal= Math.floor(Math.random()*11+1) ;
 var secondCrystal= Math.floor(Math.random()*11+1);
@@ -16,7 +16,7 @@ console.log(thirdCrystal);
 console.log(fourthCrystal);
 
 
-$("#wins").html("<p>Wins: " + wins + "</p>");
+$("#wins").html("<p>Wins: " + numWins + "</p>");
 
 $("#losses").html("<p>Losses: " + losses + "</p>")
 
@@ -34,12 +34,12 @@ $("#random-number").html("<p>" + randomNumber + "</p>");
 $("#user-data-score").html("<p>" + userTotal + "</p>");
 
 //wins function
-function wins() {
-   alert("You Win!");   
-   reset();
-}
+function wins(){
+    alert("Great Job!");
+    reset();
+ }
 //losses function
-function lose() {
+function lose(){
    alert("Bummer!");
    reset();
 }
@@ -50,9 +50,9 @@ $("#crystal-1").on("click", function(){
     $("#user-data-score").html("<p>" + userTotal + "</p>");
     console.log(userTotal);
     if (userTotal === randomNumber){
-        wins++;
+        numWins++;
         wins();
-        $("#wins").html("<p>Wins: " + wins + "</p>")}
+        $("#wins").html("<p>Wins: " + numWins + "</p>")}
     
 
     if (userTotal > randomNumber) {
@@ -63,16 +63,16 @@ $("#crystal-1").on("click", function(){
 
 $("#crystal-2").on("click", function(){
     userTotal = userTotal + secondCrystal;
-    $("#user-data-score").html("<p>" + userTotal + "</p>");
+    $("#user-data-score").html("<p>" + numWins + "</p>");
     console.log(userTotal);
     if (userTotal === randomNumber){
-        wins++;
+        numWins++;
         wins();
         $("#wins").html("<p>Wins: " + wins + "</p>")}
   
 
     if (userTotal > randomNumber) {
-        losses++;
+        numWins++;
         lose();
         $("#losses").html("<p>Losses: " + losses + "</p>")}
 })
@@ -82,9 +82,9 @@ $("#crystal-3").on("click", function(){
     $("#user-data-score").html("<p>" + userTotal + "</p>");
     console.log(userTotal);
     if (userTotal === randomNumber){
-        wins++;
+        numWins++;
         wins();
-        $("#wins").html("<p>Wins: " + wins + "</p>")}
+        $("#wins").html("<p>Wins: " + numWins + "</p>")}
 
 
     if (userTotal > randomNumber) {
@@ -98,9 +98,9 @@ $("#crystal-4").on("click", function(){
     $("#user-data-score").html("<p>" + userTotal + "</p>");
     console.log(userTotal);
     if (userTotal === randomNumber){
-        wins++;
+        numWins++;
         wins();
-        $("#wins").html("<p>Wins: " + wins + "</p>")}
+        $("#wins").html("<p>Wins: " + numWins + "</p>")}
 
 
     if (userTotal > randomNumber) {
