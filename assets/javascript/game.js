@@ -1,5 +1,5 @@
 
-document.ready(function(){
+$(document).ready(function(){
 //sets initial variables    
 var wins = 0;
 var losses= 0;
@@ -7,7 +7,12 @@ var firstCrystal= Math.floor(Math.random()*11+1) ;
 var secondCrystal= Math.floor(Math.random()*11+1);
 var thirdCrystal = Math.floor(Math.random()*11+1);
 var fourthCrystal = Math.floor(Math.random()*11+1);
-var userTotal = "";
+var userTotal = 0;
+
+console.log(firstCrystal);
+console.log(secondCrystal);
+console.log(thirdCrystal);
+console.log(fourthCrystal);
 
 
 //picks a random number for the user's goal
@@ -16,37 +21,35 @@ var randomNumber = Math.floor(Math.random()*101+19);
 console.log(randomNumber);
 //append randomNumber to html
 $("#random-number").html("<p>" + randomNumber + "</p>");
+//append userTotal to html
+$("#user-data-score").html("<p>" + userTotal + "</p>");
 
+
+
+
+//button clicks to increase userTotal by amount defined by crystal button
+
+$("#crystal-1").on("click", function(){
+    userTotal = userTotal + firstCrystal;
+    $("#user-data-score").html("<p>" + userTotal + "</p>")
 });
-//assigns random values to each crystal
 
-function numOne() {
-    console.log(firstCrystal);
-}
+$("#crystal-2").on("click", function(){
+    userTotal = userTotal + secondCrystal;
+    $("#user-data-score").html("<p>" + userTotal + "</p>")
+});
 
-function numTwo (){
-    
-    console.log(secondCrystal);
+$("#crystal-3").on("click", function(){
+    userTotal = userTotal + thirdCrystal;
+    $("#user-data-score").html("<p>" + userTotal + "</p>")
+});
 
-}
-
-function numThree() {
-    
-    console.log(thirdCrystal);
-}
-
-function numFour() {
-    
-    console.log(fourthCrystal);
-}
-
-numOne();
-numTwo();
-numThree();
-numFour();
-
+$("#crystal-4").on("click", function(){
+    userTotal = userTotal + fourthCrystal;
+    $("#user-data-score").html("<p>" + userTotal + "</p>")
+});
 //page loads, run first function
-firstFunction();
+
 
 //button clicks to increase userTotal by amount defined by crystal button
 
@@ -66,3 +69,4 @@ firstFunction();
 //     alert("Bummer!");
 //     reset();
 //}
+});
