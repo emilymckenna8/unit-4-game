@@ -118,11 +118,14 @@ $("#crystal-4").on("click", function(){
 //reset function
 function reset(){
     userTotal = 0;
+    $("#user-data-score").html("<p>" + userTotal + "</p>")
     firstCrystal= Math.floor(Math.random()*11+1) ;
     secondCrystal= Math.floor(Math.random()*11+1);
     thirdCrystal = Math.floor(Math.random()*11+1);
     fourthCrystal = Math.floor(Math.random()*11+1);
     randomNumber = Math.floor(Math.random()*101+19);
+    $("#random-number").html("<p>" + randomNumber + "</p>");
+
     console.log(firstCrystal);
     console.log(secondCrystal);
     console.log(thirdCrystal);
