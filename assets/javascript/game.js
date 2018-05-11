@@ -15,6 +15,13 @@ console.log(thirdCrystal);
 console.log(fourthCrystal);
 
 
+$("#wins").html("<p>Wins: " + wins + "</p>");
+
+$("#losses").html("<p>Losses: " + losses + "</p>")
+
+
+
+
 
 //picks a random number for the user's goal
 var randomNumber = Math.floor(Math.random()*101+19);
@@ -75,6 +82,7 @@ function reset(){
 //wins function
 if (userTotal === randomNumber){
    wins++;
+   $("#running-score").html("<p>Wins: " + wins + "</p>");
    alert("You Win!");   
    reset();
 }
