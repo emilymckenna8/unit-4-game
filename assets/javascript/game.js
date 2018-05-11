@@ -63,7 +63,7 @@ $("#crystal-1").on("click", function(){
 
 $("#crystal-2").on("click", function(){
     userTotal = userTotal + secondCrystal;
-    $("#user-data-score").html("<p>" + numWins + "</p>");
+    $("#user-data-score").html("<p>" + userTotal + "</p>");
     console.log(userTotal);
     if (userTotal === randomNumber){
         numWins++;
