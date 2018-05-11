@@ -48,7 +48,7 @@ $("#crystal-4").on("click", function(){
     userTotal = userTotal + fourthCrystal;
     $("#user-data-score").html("<p>" + userTotal + "</p>")
 });
-//page loads, run first function
+
 
 
 //button clicks to increase userTotal by amount defined by crystal button
@@ -56,17 +56,29 @@ $("#crystal-4").on("click", function(){
 
 
 //reset function
-
+function reset(){
+    userTotal = 0;
+    firstCrystal= Math.floor(Math.random()*11+1) ;
+    secondCrystal= Math.floor(Math.random()*11+1);
+    thirdCrystal = Math.floor(Math.random()*11+1);
+    fourthCrystal = Math.floor(Math.random()*11+1);
+    randomNumber = Math.floor(Math.random()*101+19);
+    console.log(firstCrystal);
+    console.log(secondCrystal);
+    console.log(thirdCrystal);
+    console.log(fourthCrystal);
+    console.log(randomNumber)
+}
 //wins function
-// if (userTotal === randomNumber){
-//     wins++;
-//     alert("You Win!");
-//     reset();
-// }
-// //losses function
-// else {
-//     losses++;
-//     alert("Bummer!");
-//     reset();
-//}
+if (userTotal === randomNumber){
+   wins++;
+   alert("You Win!");   
+   reset();
+}
+//losses function
+else {
+    losses++;
+   alert("Bummer!");
+   reset();
+}
 });
