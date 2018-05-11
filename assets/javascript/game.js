@@ -15,6 +15,7 @@ console.log(thirdCrystal);
 console.log(fourthCrystal);
 
 
+
 //picks a random number for the user's goal
 var randomNumber = Math.floor(Math.random()*101+19);
 //prints randomNumber to check
@@ -25,33 +26,35 @@ $("#random-number").html("<p>" + randomNumber + "</p>");
 $("#user-data-score").html("<p>" + userTotal + "</p>");
 
 
-
-
 //button clicks to increase userTotal by amount defined by crystal button
 
 $("#crystal-1").on("click", function(){
     userTotal = userTotal + firstCrystal;
-    $("#user-data-score").html("<p>" + userTotal + "</p>")
+    $("#user-data-score").html("<p>" + userTotal + "</p>");
+    console.log(userTotal);
 });
 
 $("#crystal-2").on("click", function(){
     userTotal = userTotal + secondCrystal;
-    $("#user-data-score").html("<p>" + userTotal + "</p>")
+    $("#user-data-score").html("<p>" + userTotal + "</p>");
+    console.log(userTotal);
 });
 
 $("#crystal-3").on("click", function(){
     userTotal = userTotal + thirdCrystal;
-    $("#user-data-score").html("<p>" + userTotal + "</p>")
+    $("#user-data-score").html("<p>" + userTotal + "</p>");
+    console.log(userTotal);
 });
 
 $("#crystal-4").on("click", function(){
     userTotal = userTotal + fourthCrystal;
-    $("#user-data-score").html("<p>" + userTotal + "</p>")
+    $("#user-data-score").html("<p>" + userTotal + "</p>");
+    console.log(userTotal);
 });
 
 
 
-//button clicks to increase userTotal by amount defined by crystal button
+
 
 
 
@@ -67,7 +70,7 @@ function reset(){
     console.log(secondCrystal);
     console.log(thirdCrystal);
     console.log(fourthCrystal);
-    console.log(randomNumber)
+    console.log(randomNumber);
 }
 //wins function
 if (userTotal === randomNumber){
@@ -76,7 +79,7 @@ if (userTotal === randomNumber){
    reset();
 }
 //losses function
-else {
+if (userTotal > randomNumber) {
     losses++;
    alert("Bummer!");
    reset();
