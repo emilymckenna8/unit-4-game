@@ -45,6 +45,11 @@
     background-color: teal;
 }
 
-.crystals {
+.crystal-set {
     width: 80%;
+}
+
+img {
+    width: 100px;
+    height: 100px;
 }

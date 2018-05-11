@@ -7,61 +7,64 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="assets/javascript/game.js"></script>
+
     <title>Crystals Collector</title>
 </head>
 <body>
-    <div id="game-body">
-        <div id="game-title">
-            <h1>CrystalsCollector!</h1>
-        </div>
 
-        <div id="game-instructions">
-            <div id="listofinstructions">
-                <p class="instructions">You will be given a random number at the start of the game.</p>
-                <p class="instructions">There are four crystals below.  By clicking on a crystal you will 
-                    add a specific amount of points to your total score.
-                </p>
-                <p class="instructions">You win the game by matching your total score to 
-                    random number, you lose the game if your total score goes above the random
-                    number.
-                </p>
-                <p class="instructions">The value of each crystal is hidden from you until you clicking
-                    on it.
-                </p>
-                <p class="instructions">Each time when the game starts, the game will change the values of each 
-                    crystal.
-                </p>
-            </div>
-        </div>
-
-
-        <div id="third-row">
-            <div id="random-number">
-                <p>this is where the random number will go</p>
-            </div>
-            <div id="running-score">
-                <p>Wins: </p>
-                <p>Losses: </p>
-            </div>
-        </div>
-
-       
-        <div class="crystals">
-            
-            <div id="crystal-1"></div>
-            <div id-"crystal-2"></div>
-            <div id="crystal-3"></div>
-            <div id="crystal-4"></div>
-           
-        </div>
-
-        <div class="user-data">
-            <div id="user-data-header"><p>Your total score is:</p></div>
-            <div id="user-data-score"></div>
-        </div>
-
-    </div>
     
+        <div id="game-body">
+            <div id="game-title">
+                <h1>CrystalsCollector!</h1>
+            </div>
+
+            <div id="game-instructions">
+                <div id="listofinstructions">
+                    <p class="instructions">You will be given a random number at the start of the game.</p>
+                    <p class="instructions">There are four crystals below.  By clicking on a crystal you will 
+                        add a specific amount of points to your total score.
+                    </p>
+                    <p class="instructions">You win the game by matching your total score to 
+                        random number, you lose the game if your total score goes above the random
+                        number.
+                    </p>
+                    <p class="instructions">The value of each crystal is hidden from you until you clicking
+                        on it.
+                    </p>
+                    <p class="instructions">Each time when the game starts, the game will change the values of each 
+                        crystal.
+                    </p>
+                </div>
+            </div>
+
+
+            <div id="third-row">
+                <div id="random-number">
+                    <p>Click to see the magic number!</p>
+                </div>
+                <div id="running-score">
+                    <p>Wins: </p>
+                    <p>Losses: </p>
+                </div>
+            </div>
+
+        
+            <div class="crystal-set">
+                <div class="crystals">
+                    <div id="crystal-1"><img src="assets/images/crystal-1.jpg" alt="crystal-1"></div>
+                    <div id-"crystal-2"><img src="assets/images/crystal-2.png" alt="crystal-2"></div>
+                    <div id="crystal-3"><img src="assets/images/crystal-3.jpg" alt="crystal-3"></div>
+                    <div id="crystal-4"><img src="assets/images/crystal-4.jpg" alt="crystal-4"></div>
+                </div>
+            </div>
+
+            <div class="user-data">
+                <div id="user-data-header"><p>Your total score is:</p></div>
+                <div id="user-data-score"></div>
+            </div>
+
+        </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>    
 </body>
 </html>
