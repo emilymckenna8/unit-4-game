@@ -4,10 +4,10 @@ $(document).ready(function(){
 //sets initial variables    
 var numWins = 0;
 var losses= 0;
-var firstCrystal= Math.floor(Math.random()*11+1) ;
-var secondCrystal= Math.floor(Math.random()*11+1);
-var thirdCrystal = Math.floor(Math.random()*11+1);
-var fourthCrystal = Math.floor(Math.random()*11+1);
+var firstCrystal= Math.floor(Math.random()*12+1) ;
+var secondCrystal= Math.floor(Math.random()*12+1);
+var thirdCrystal = Math.floor(Math.random()*12+1);
+var fourthCrystal = Math.floor(Math.random()*12+1);
 var userTotal = 0;
 //prints numbers for tracking
 console.log(firstCrystal);
@@ -24,8 +24,8 @@ $("#losses").html("<p>Losses: " + losses + "</p>")
 
 
 
-//picks a random number for the user's goal
-var randomNumber = Math.floor(Math.random()*101+19);
+//picks a random number for the user's goals
+var randomNumber = Math.floor(Math.random()*102+19);
 //prints randomNumber to check
 console.log(randomNumber);
 //append randomNumber to html
@@ -119,11 +119,11 @@ $("#crystal-4").on("click", function(){
 function reset(){
     userTotal = 0;
     $("#user-data-score").html("<p>" + userTotal + "</p>")
-    firstCrystal= Math.floor(Math.random()*11+1) ;
-    secondCrystal= Math.floor(Math.random()*11+1);
-    thirdCrystal = Math.floor(Math.random()*11+1);
-    fourthCrystal = Math.floor(Math.random()*11+1);
-    randomNumber = Math.floor(Math.random()*101+19);
+    firstCrystal= Math.floor(Math.random()*12+1) ;
+    secondCrystal= Math.floor(Math.random()*12+1);
+    thirdCrystal = Math.floor(Math.random()*12+1);
+    fourthCrystal = Math.floor(Math.random()*12+1);
+    randomNumber = Math.floor(Math.random()*102+19);
     $("#random-number").html("<p>" + randomNumber + "</p>");
 
     console.log(firstCrystal);
