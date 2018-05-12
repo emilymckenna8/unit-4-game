@@ -1,5 +1,6 @@
 body {
-    background: url("./assets/images/background_img.jpg");
+    background: url("../images/background_img.jpg");
+    box-sizing: border-box;
 }
 
 #game-body {
@@ -11,6 +12,8 @@ body {
     background-color: orangered;
     width: 75%;
     font-size: 15px;
+    padding: 10px;
+    margin-bottom: 5px;
 }
 
 #game-instructions {
@@ -37,6 +40,8 @@ body {
 #random-number {
     background-color: seagreen;
     color: navy;
+    height:75px;
+    font-size: 20px
 }
 
 #running-score {
@@ -52,12 +57,32 @@ body {
     
 }
 
-.crystal-set {
-    width: 80%;
-}
+
 
 img {
     width: 100px;
     height: 100px;
     float: left;
+    border-style: solid;
+    border-color: black;
+
+}
+#user-data-header {
+    margin-bottom: 20px;
+}
+
+#user-data-score {
+    height: 75px;
+    font-size: 20px;
+}
+
+
+#wins {
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.crystals {
+    width: 80%;
+
 }
