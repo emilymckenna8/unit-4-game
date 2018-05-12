@@ -1,6 +1,10 @@
+body {
+    background: url("./assets/images/background_img.jpg");
+}
+
 #game-body {
     width: 50%;
-
+    
 }
 #game-title {
     color: white;
@@ -23,7 +27,7 @@
 
 .instructions {
     color: seagreen;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 #third-row {
@@ -42,7 +46,10 @@
 }
 
 .user-data {
+    clear: left;
     background-color: teal;
+    width: 75%;
+    
 }
 
 .crystal-set {
@@ -52,4 +59,5 @@
 img {
     width: 100px;
     height: 100px;
+    float: left;
 }
